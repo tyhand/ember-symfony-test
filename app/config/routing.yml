@@ -1,0 +1,22 @@
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+NelmioApiDocBundle:
+    resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
+    prefix:   /api/doc
+
+api_login_check:
+    path: /api/login_check
+
+MesdUserBundle_security:
+    resource: "@MesdUserBundle/Resources/config/routing/security.yml"
+    prefix: /api
+
+MesdUserBundle_registration:
+    resource: "@MesdUserBundle/Resources/config/routing/registration.yml"
+    prefix: /register
+
+MesdUserBundle_reset:
+    resource: "@MesdUserBundle/Resources/config/routing/reset.yml"
+    prefix: /reset

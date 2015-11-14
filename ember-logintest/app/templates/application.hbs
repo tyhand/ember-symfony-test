@@ -1,0 +1,27 @@
+<div id="wrapper">
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                {{#link-to "index" class="navbar-brand"}}Test{{/link-to}}
+            </div>
+            <ul class="nav navbar-nav">
+                {{#if session.isAuthenticated}}
+                    <li>{{#link-to "profile"}}Profile{{/link-to}}</li>
+                {{/if}}
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    {{#if session.isAuthenticated}}
+                        <button type="button" class="btn btn-link navbar-btn" {{action 'logout'}}>Logout</button>
+                    {{else}}
+                        {{#link-to "login"}}Login{{/link-to}}
+                    {{/if}}
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="container">
+    {{outlet}}
+</div>
