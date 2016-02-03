@@ -1051,6 +1051,7 @@ define('ember-logintest/tests/adapters/application.jshint', function () {
 
   QUnit.module('JSHint - adapters');
   QUnit.test('adapters/application.js should pass jshint', function(assert) { 
+    assert.expect(1);
     assert.ok(true, 'adapters/application.js should pass jshint.'); 
   });
 
@@ -1061,6 +1062,7 @@ define('ember-logintest/tests/app.jshint', function () {
 
   QUnit.module('JSHint - .');
   QUnit.test('app.js should pass jshint', function(assert) { 
+    assert.expect(1);
     assert.ok(true, 'app.js should pass jshint.'); 
   });
 
@@ -1071,7 +1073,8 @@ define('ember-logintest/tests/authenticators/jwt.jshint', function () {
 
   QUnit.module('JSHint - authenticators');
   QUnit.test('authenticators/jwt.js should pass jshint', function(assert) { 
-    assert.ok(false, 'authenticators/jwt.js should pass jshint.\nauthenticators/jwt.js: line 9, col 49, \'reject\' is defined but never used.\nauthenticators/jwt.js: line 46, col 16, \'data\' is defined but never used.\nauthenticators/jwt.js: line 47, col 49, \'reject\' is defined but never used.\n\n3 errors'); 
+    assert.expect(1);
+    assert.ok(false, 'authenticators/jwt.js should pass jshint.\nauthenticators/jwt.js: line 9, col 49, \'reject\' is defined but never used.\nauthenticators/jwt.js: line 47, col 49, \'reject\' is defined but never used.\nauthenticators/jwt.js: line 46, col 16, \'data\' is defined but never used.\n\n3 errors'); 
   });
 
 });
@@ -1081,6 +1084,7 @@ define('ember-logintest/tests/authorizers/jwt.jshint', function () {
 
   QUnit.module('JSHint - authorizers');
   QUnit.test('authorizers/jwt.js should pass jshint', function(assert) { 
+    assert.expect(1);
     assert.ok(true, 'authorizers/jwt.js should pass jshint.'); 
   });
 
@@ -1091,6 +1095,7 @@ define('ember-logintest/tests/controllers/application.jshint', function () {
 
   QUnit.module('JSHint - controllers');
   QUnit.test('controllers/application.js should pass jshint', function(assert) { 
+    assert.expect(1);
     assert.ok(true, 'controllers/application.js should pass jshint.'); 
   });
 
@@ -1101,6 +1106,7 @@ define('ember-logintest/tests/controllers/login.jshint', function () {
 
   QUnit.module('JSHint - controllers');
   QUnit.test('controllers/login.js should pass jshint', function(assert) { 
+    assert.expect(1);
     assert.ok(true, 'controllers/login.js should pass jshint.'); 
   });
 
@@ -1170,6 +1176,7 @@ define('ember-logintest/tests/helpers/resolver.jshint', function () {
 
   QUnit.module('JSHint - helpers');
   QUnit.test('helpers/resolver.js should pass jshint', function(assert) { 
+    assert.expect(1);
     assert.ok(true, 'helpers/resolver.js should pass jshint.'); 
   });
 
@@ -1203,6 +1210,7 @@ define('ember-logintest/tests/helpers/start-app.jshint', function () {
 
   QUnit.module('JSHint - helpers');
   QUnit.test('helpers/start-app.js should pass jshint', function(assert) { 
+    assert.expect(1);
     assert.ok(true, 'helpers/start-app.js should pass jshint.'); 
   });
 
@@ -1213,7 +1221,8 @@ define('ember-logintest/tests/initializers/jwt-auth.jshint', function () {
 
   QUnit.module('JSHint - initializers');
   QUnit.test('initializers/jwt-auth.js should pass jshint', function(assert) { 
-    assert.ok(false, 'initializers/jwt-auth.js should pass jshint.\ninitializers/jwt-auth.js: line 3, col 8, \'ENV\' is defined but never used.\ninitializers/jwt-auth.js: line 9, col 37, \'application\' is defined but never used.\n\n2 errors'); 
+    assert.expect(1);
+    assert.ok(false, 'initializers/jwt-auth.js should pass jshint.\ninitializers/jwt-auth.js: line 9, col 37, \'application\' is defined but never used.\ninitializers/jwt-auth.js: line 3, col 8, \'ENV\' is defined but never used.\n\n2 errors'); 
   });
 
 });
@@ -1223,6 +1232,7 @@ define('ember-logintest/tests/models/profile.jshint', function () {
 
   QUnit.module('JSHint - models');
   QUnit.test('models/profile.js should pass jshint', function(assert) { 
+    assert.expect(1);
     assert.ok(true, 'models/profile.js should pass jshint.'); 
   });
 
@@ -1233,6 +1243,7 @@ define('ember-logintest/tests/router.jshint', function () {
 
   QUnit.module('JSHint - .');
   QUnit.test('router.js should pass jshint', function(assert) { 
+    assert.expect(1);
     assert.ok(true, 'router.js should pass jshint.'); 
   });
 
@@ -1243,6 +1254,7 @@ define('ember-logintest/tests/routes/application.jshint', function () {
 
   QUnit.module('JSHint - routes');
   QUnit.test('routes/application.js should pass jshint', function(assert) { 
+    assert.expect(1);
     assert.ok(true, 'routes/application.js should pass jshint.'); 
   });
 
@@ -1253,6 +1265,7 @@ define('ember-logintest/tests/routes/profile.jshint', function () {
 
   QUnit.module('JSHint - routes');
   QUnit.test('routes/profile.js should pass jshint', function(assert) { 
+    assert.expect(1);
     assert.ok(true, 'routes/profile.js should pass jshint.'); 
   });
 
@@ -1263,6 +1276,7 @@ define('ember-logintest/tests/services/user-session.jshint', function () {
 
   QUnit.module('JSHint - services');
   QUnit.test('services/user-session.js should pass jshint', function(assert) { 
+    assert.expect(1);
     assert.ok(false, 'services/user-session.js should pass jshint.\nservices/user-session.js: line 8, col 45, Missing semicolon.\nservices/user-session.js: line 9, col 21, Missing semicolon.\nservices/user-session.js: line 11, col 57, Missing semicolon.\nservices/user-session.js: line 13, col 9, Missing semicolon.\nservices/user-session.js: line 1, col 16, \'Ember\' is not defined.\nservices/user-session.js: line 5, col 20, \'Promise\' is not defined.\nservices/user-session.js: line 6, col 13, \'userName\' is not defined.\n\n7 errors'); 
   });
 
@@ -1280,6 +1294,7 @@ define('ember-logintest/tests/test-helper.jshint', function () {
 
   QUnit.module('JSHint - .');
   QUnit.test('test-helper.js should pass jshint', function(assert) { 
+    assert.expect(1);
     assert.ok(true, 'test-helper.js should pass jshint.'); 
   });
 
@@ -1312,7 +1327,7 @@ catch(err) {
 if (runningTests) {
   require("ember-logintest/tests/test-helper");
 } else {
-  require("ember-logintest/app")["default"].create({"name":"ember-logintest","version":"0.0.0+"});
+  require("ember-logintest/app")["default"].create({"name":"ember-logintest","version":"0.0.0+fc805bdb"});
 }
 
 /* jshint ignore:end */
